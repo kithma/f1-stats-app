@@ -11,6 +11,6 @@ describe("Race winners list", () => {
 		);
 
 		expect(queryByTestId("winners-table")).not.toBeInTheDocument();
-		expect(queryByTestId("spinner")).not.toBeInTheDocument();
+		expect(queryByTestId("spinner")).toBeInTheDocument();
 	});
 });
