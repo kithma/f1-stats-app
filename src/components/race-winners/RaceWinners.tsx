@@ -19,6 +19,8 @@ const RaceWinners = observer(() => {
 	const { raceStore } = useStore();
 	const { races, seasonalWinner, totalCount } = raceStore;
 
+	console.log("test")
+
 	//To get the data when the component is mounting
 	useEffect(() => {
 		onInitialLoad();
