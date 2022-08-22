@@ -63,8 +63,7 @@ export class RaceStore {
 
 			runInAction(() =>
 				this._seasonalWinner.set(
-					response?.MRData?.StandingsTable?.StandingsLists[0]?.DriverStandings[0]?.Driver
-						?.driverId,
+					response?.MRData?.StandingsTable?.StandingsLists[0]?.DriverStandings[0]?.Driver?.driverId,
 				),
 			);
 		} catch (err) {

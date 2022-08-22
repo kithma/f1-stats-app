@@ -26,12 +26,8 @@ const Pagination = ({ totalCount, limit, currentPageNumber, onClickPage }: Props
 		<div className="pagination-wrapper">
 			<img
 				src={"/assets/icons/arrowHead.svg"}
-				className={`pagination-wrapper__left-arrow ${
-					1 === currentPageNumber ? "disable" : ""
-				}`}
-				onClick={() =>
-					1 !== currentPageNumber ? onClickPage(currentPageNumber - 1) : null
-				}
+				className={`pagination-wrapper__left-arrow ${1 === currentPageNumber ? "disable" : ""}`}
+				onClick={() => (1 !== currentPageNumber ? onClickPage(currentPageNumber - 1) : null)}
 			/>
 			{pageNumbers?.map((pageNumber) => (
 				<p

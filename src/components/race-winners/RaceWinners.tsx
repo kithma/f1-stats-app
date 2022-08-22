@@ -54,15 +54,11 @@ const RaceWinners = observer(() => {
 							</thead>
 							<tbody>
 								{races.map((race) => {
-									console.log(race);
-									const { familyName, givenName, driverId } =
-										race.Results[0].Driver;
+									const { familyName, givenName, driverId } = race.Results[0].Driver;
 									return (
 										<tr
 											key={race.round}
-											className={`${
-												seasonalWinner === driverId ? "highlight" : ""
-											}`}
+											className={`${seasonalWinner === driverId ? "highlight" : ""}`}
 										>
 											<td>{race.round}</td>
 											<td>{race.raceName}</td>
