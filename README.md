@@ -5,9 +5,9 @@ Application is created for viewing F1 world champions starting from 2015 until t
 
 ## Architectural Choices Summary
 
-To create a Single Page Application as per the requirements I chose ReactJs becasue it one of the most popular and developer friendly library. It's also the Frontend library I'm most familiar with.\
+To create a Single Page Application as per the requirements I chose ReactJs becasue it one of the most popular and developer friendly library. It's also the Frontend library I'm most familiar with.
 
-For state management of the application I used Mobx since it's more easier to setup and much more cleaner in my opinion.\
+For state management of the application I used Mobx since it's more easier to setup and much more cleaner in my opinion.
 It gives the ability to maintain data layer seperatly to the UI components.
 
 Directory structure ensures that there is a clear seperation between components, stores, models, stores and styles of the application.
@@ -28,6 +28,14 @@ Opens application in [http://localhost:3000](http://localhost:3000) to view it i
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.
+
+### `npm run eslint`
+
+Show warnings/errors according to the eslint rules.
+
+### `npm run prettier`
+
+Show warnings/errors according to the prettier rules.
 
 ### `npm run build`
 
