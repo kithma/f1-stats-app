@@ -4,7 +4,7 @@ import { routes } from "../../../constants/Routes";
 import "./Season.css";
 
 interface Props {
-	season: string;
+	season: number;
 }
 
 const Season = ({ season }: Props) => {

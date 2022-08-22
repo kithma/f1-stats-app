@@ -13,7 +13,7 @@ import "./RaceWinners.css";
 
 const RaceWinners = observer(() => {
 	const [pageNumber, setPageNumer] = useState(1);
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 
 	const params = useParams();
 	const { raceStore } = useStore();
@@ -21,11 +21,16 @@ const RaceWinners = observer(() => {
 
 	//To get the data when the component is mounting
 	useEffect(() => {
-		setIsLoading(true);
-		raceStore.loadRaceWinners(params.year as string, pageNumber);
-		raceStore.loadSeasonWinner(params.year as string);
-		setIsLoading(false);
+		onInitialLoad();
 	}, []);
+
+	const onInitialLoad = async () => {
+		await Promise.all([
+			raceStore.loadRaceWinners(params.year as string, pageNumber),
+			raceStore.loadSeasonWinner(params.year as string),
+		]);
+		setIsLoading(false);
+	};
 
 	const onClickPage = (page: number) => {
 		setPageNumer(page);
