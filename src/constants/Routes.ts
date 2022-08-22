@@ -1,4 +1,3 @@
-
 //To define the routes
 export const routes = {
 	ROOT: "/",
