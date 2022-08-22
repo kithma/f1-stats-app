@@ -1,0 +1,28 @@
+.footer-wrapper {
+	display: flex;
+	justify-content: center;
+	min-height: 80px;
+	background-color: var(--color-dark-grey);
+	margin-top: auto;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.footer-wrapper__text-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1220px;
+	padding: 0 30px;
+	width: 100%;
+	color: var(--color-white);
+}
+
+.footer-wrapper__text-container__image {
+	width: 55px;
+}
+
+.footer-wrapper__text-container__text a {
+	color: var(--color-white);
+}

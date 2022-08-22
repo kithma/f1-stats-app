@@ -1,0 +1,31 @@
+/* pagination styles */
+.pagination-wrapper {
+	display: flex;
+	gap: 20px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+
+.pagination-wrapper__left-arrow {
+	width: 15px;
+	cursor: pointer;
+}
+
+.pagination-wrapper__right-arrow {
+	width: 15px;
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+
+.pagination-wrapper__page-button {
+	font-size: 18px;
+}
+
+.active {
+	font-weight: 600;
+}
+
+.disable {
+	cursor: default;
+	opacity: 0.5;
+}

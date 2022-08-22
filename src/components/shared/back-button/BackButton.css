@@ -1,0 +1,20 @@
+/* backButton styles */
+
+.back-button-wrapper__button {
+	display: flex;
+	gap: 10px;
+}
+
+.back-button-wrapper a {
+	text-decoration: none;
+}
+
+.back-button-wrapper__button--arrow-head {
+	width: 15px;
+}
+
+.back-button-wrapper__button--text {
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--color-black);
+}
