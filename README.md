@@ -5,12 +5,12 @@ Application is created for viewing F1 race stats starting from 2015 until the cu
 
 ## Architectural Decisions Summary
 
-To create a Single Page Application as per the requirements I chose __React__ becasue it one of the most popular and developer friendly libraries with tons of support. It's easy to get started have some powerful features I really like. It's also the front-end library/framework I'm most familiar with.
+To create a Single Page Application as per the requirements I chose **React** becasue it one of the most popular and developer friendly libraries with tons of support. It's easy to get started have some powerful features I really like. It's also the front-end library/framework I'm most familiar with.
 
 For state management of the application I used Mobx since it's more easier to setup and much more cleaner in my opinion.
 It gives the ability to maintain data layer seperatly to the UI components.
 
-Directory structure ensures that there is a clear seperation between components, stores, models, stores and styles of the application. The components are written to ensure that they can be re-used if needed. 
+Directory structure ensures that there is a clear seperation between components, stores, models, stores and styles of the application. The components are written to ensure that they can be re-used if needed.
 
 In the application, testing is handled by react-testing-library which is bundled with create-react-app.
 
