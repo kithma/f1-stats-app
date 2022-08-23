@@ -12,13 +12,13 @@ export class RaceStore {
 		this.fetch = fetch; // To differentiate mockFetch for testing and fetch API for runtime
 	}
 
-	@observable
+	@observable // Store race data
 	private _racesRegistry: ObservableMap<string, RaceModel> = observable.map();
 
-	@observable
+	@observable // Store rseasonal winner
 	private _seasonalWinner: IObservableValue<string> = observable.box("");
 
-	@observable
+	@observable // Store total items
 	private _totalCount: IObservableValue<number> = observable.box(0);
 
 	get races(): RaceModel[] {
